@@ -1,0 +1,64 @@
+/* Estilos adicionales para scrollbar si no usas el plugin tailwind-scrollbar */
+/* Para Webkit (Chrome, Safari, Edge nuevo) */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px; /* Altura para scrollbars horizontales */
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del track */
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Color del thumb */
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del thumb al pasar el mouse */
+}
+/* Para Firefox */
+.custom-scrollbar-firefox {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+*{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+footer {
+    border-top: 2px solid #fff;
+}
+
+:is(.social_media, .contact, .my_services) h3 {
+    margin-bottom: 1rem;
+}
+
+:is(.social_media, .contact, .my_services) p,
+:is(.fa-phone, .fa-envelope, .fa-message, .fa-brands) {
+    color: #858080;
+}
+
+.social_mediaIcons .fa-brands {
+    font-size: 2rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.social_mediaIcons .fa-brands:hover {
+    color: var(--secondary-bg-color);
+}
+.contact .wap {
+    padding: 0.5rem 1.8rem;
+    background-color: unset;
+    border: 1px solid var(--secondary-bg-color);
+    font-family: var(--font);
+    font-size: 0.9rem;
+    color: #a3a3a3;
+}
+.carousel-images::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
+}
+.carousel-images {
+    -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
+    scrollbar-width: none;  /* Para Firefox */
+}
