@@ -416,3 +416,17 @@ footer {
     font-size: 0.9rem;
     color: #a3a3a3;
 }
+/* En style.css */
+
+/* Estilos para los elementos que aparecerán al hacer scroll */
+.reveal-on-scroll {
+  opacity: 0; /* Comienza invisible */
+  transform: translateY(30px); /* Comienza ligeramente desplazado hacia abajo */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transición suave */
+}
+
+/* Clase que se añade con JavaScript cuando el elemento es visible */
+.reveal-on-scroll.is-visible {
+  opacity: 1; /* Se vuelve visible */
+  transform: translateY(0); /* Vuelve a su posición original */
+}
