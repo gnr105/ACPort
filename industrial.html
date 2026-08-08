@@ -1,345 +1,83 @@
-<!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<!doctype html>
+<html lang="es">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Industrial</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="/industrial.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Relief:wght@400;700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function(){
-                emailjs.init({ // Reemplaza con tu Public Key (antes User ID)
-                publicKey: "Ap18UTM9SwoJnojTl", // O TU_USER_ID
-                });
-            })();
-        </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil industrial de Agustín Callata: mantenimiento, calidad, logística y análisis de datos.">
+  <meta name="theme-color" content="#09100f">
+  <title>Agustín Callata | Ingeniería Industrial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="industrial.css">
+  <link rel="stylesheet" href="videos.css">
+  <link rel="stylesheet" href="contact-email.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body>
+  <div class="blueprint" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="navbar shell" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><img src="assets/lgaca.png" alt="" width="45" height="45"><span>AC<span>/IND</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="industrial-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="industrial-menu"><a href="#perfil">Perfil</a><a href="#servicios">Servicios</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a><a class="portfolio-link" href="index.html"><i class="fa-solid fa-code"></i> Perfil Tech</a></div>
+    </nav>
+  </header>
 
-       
-    <header class="bg-black shadow-md sticky top-0 z-50">
-            <nav class="container mx-auto px-6 py-2 flex justify-between items-center relative">
-                <a href="#presentacion" class="logo cursor-pointer" onclick="closeMenuAndScrollToSection('presentacion')">
-                    <img src="/ACPort/assets/lgaca.png" alt="Logo portafolio" width="80" height="50">
-                </a>
+  <main>
+    <section class="hero shell" id="inicio">
+      <div class="hero-copy reveal"><span class="status"><i></i> Ingeniería + tecnología</span><p class="overline">Perfil profesional / 2026</p><h1>Optimizo procesos.<br><span>Conecto datos.</span><br>Genero resultados.</h1><p class="lead">Soy Agustín Callata, estudiante avanzado de Ingeniería Industrial y Analista Programador Universitario. Integro operaciones, mantenimiento y tecnología para construir procesos más seguros, medibles y eficientes.</p><div class="actions"><a class="button" href="#experiencia">Ver experiencia <i class="fa-solid fa-arrow-down"></i></a><a class="button secondary" href="assets/CALLATA-ING-CV-2025.pdf" download><i class="fa-solid fa-download"></i> Descargar CV</a></div></div>
+      <div class="hero-visual reveal"><div class="photo"><img src="assets/perfil.jpg" alt="Agustín Callata" width="600" height="700"><span class="corner top-left"></span><span class="corner bottom-right"></span></div><div class="data-tag tag-one"><small>ESPECIALIDAD</small><strong>Gestión industrial</strong></div><div class="data-tag tag-two"><small>UBICACIÓN</small><strong>Jujuy, Argentina</strong></div></div>
+      <div class="scroll-mark" aria-hidden="true">SCROLL <span></span></div>
+    </section>
 
-                <div class="md:hidden">
-                    <button id="hamburger-button" aria-label="Abrir menú de navegación" aria-expanded="false" class="text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="hamburger-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                        <svg class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="close-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
+    <section class="marquee" aria-label="Áreas de conocimiento"><div><span>MANTENIMIENTO</span><i>✦</i><span>CALIDAD</span><i>✦</i><span>LOGÍSTICA</span><i>✦</i><span>POWER BI</span><i>✦</i><span>SAP</span><i>✦</i><span>ERP</span></div></section>
 
-                <div id="mobile-menu"
-                     class="hidden md:flex md:items-center w-full md:w-auto
-                            absolute md:relative top-full left-0 md:top-auto md:left-auto
-                            bg-black md:bg-transparent shadow-md md:shadow-none
-                            p-5 md:p-0 mt-0.5 md:mt-0">
-                    <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 w-full text-center md:text-left">
-                        <li><a href="#presentacion" onclick="closeMenuAndScrollToSection('presentacion')" class="block py-2 text-white hover:text-blue-600 font-medium">Inicio</a></li>
-                        <li><a href="#sobre-mi" onclick="closeMenuAndScrollToSection('sobre-mi')" class="block py-2 text-white hover:text-blue-600 font-medium">Sobre Mí</a></li>
-                        <li><a href="#servicios" onclick="closeMenuAndScrollToSection('servicios')" class="block py-2 text-white hover:text-blue-600 font-medium">Servicios</a></li>
-                        <li><a href="#trabajos" onclick="closeMenuAndScrollToSection('trabajos')" class="block py-2 text-white hover:text-blue-600 font-medium">Trabajos</a></li>
-                    </ul>
-                </div>
-            </nav>
-</header>
-    <div class="container">
+    <section class="section shell" id="perfil">
+      <header class="section-header reveal"><span>01 / PERFIL</span><h2>Visión integral de la operación</h2><p>Formación técnica y capacidad analítica aplicadas al entorno industrial.</p></header>
+      <div class="profile-grid">
+        <div class="profile-copy reveal"><p>Combino conocimientos de ingeniería y programación para comprender la operación de punta a punta. Tengo experiencia en logística, formación de equipos, liderazgo y planificación de proyectos de instalación y mantenimiento.</p><p>Trabajo con herramientas ERP y de gestión como SAP, GESCO y Fracttal One, además de Power BI para transformar datos operativos en información útil para decidir.</p><button class="inline-action open-contact" type="button">Conversar sobre una oportunidad <i class="fa-solid fa-arrow-right"></i></button></div>
+        <div class="capabilities reveal"><article><span>01</span><div><h3>Planificación</h3><p>Recursos, activos, tiempos y prioridades.</p></div></article><article><span>02</span><div><h3>Mejora continua</h3><p>Procesos medibles y decisiones basadas en evidencia.</p></div></article><article><span>03</span><div><h3>Liderazgo</h3><p>Coordinación de equipos y comunicación efectiva.</p></div></article><article><span>04</span><div><h3>Transformación digital</h3><p>Software, automatización y visualización de datos.</p></div></article></div>
+      </div>
+      <div class="toolbox reveal"><span>ISO 9001</span><span>ISO 7396-1</span><span>SAP</span><span>GESCO</span><span>Fracttal One</span><span>Power BI</span><span>Logística</span><span>KPIs</span><span>ERP</span><span>Inglés</span></div>
+    </section>
 
-        <section id="presentacion" class="py-20 bg-white">
-            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hola, soy <span class="text-blue-600">Agustin Callata</span></h1>
-                    <p class="text-lg text-gray-700 mb-6">Estudiante de Ingenieria Industrial - Analista Programador Universitario</p>
+    <section class="section dark-panel" id="servicios"><div class="shell">
+      <header class="section-header reveal"><span>02 / SERVICIOS</span><h2>Soluciones para operaciones más eficientes</h2></header>
+      <div class="services-grid">
+        <article class="service reveal"><div class="service-top"><span>01</span><i class="fa-solid fa-award"></i></div><h3>Gestión de calidad</h3><p>Diseño y mejora de procesos con criterios de calidad, trazabilidad y orientación a estándares como ISO 9001.</p><ul><li>Mapeo de procesos</li><li>Identificación de mejoras</li><li>Control y documentación</li></ul></article>
+        <article class="service featured reveal"><div class="service-top"><span>02</span><i class="fa-solid fa-gears"></i></div><h3>Gestión de mantenimiento</h3><p>Planificación de activos, órdenes de trabajo, inventarios y recursos mediante herramientas de mantenimiento.</p><ul><li>Plan preventivo y correctivo</li><li>Control de activos y repuestos</li><li>Análisis de KPIs</li></ul></article>
+        <article class="service reveal"><div class="service-top"><span>03</span><i class="fa-solid fa-chart-line"></i></div><h3>Datos industriales</h3><p>Preparación y análisis de información operativa para diagnosticar desvíos y respaldar mejores decisiones.</p><ul><li>Dashboards en Power BI</li><li>Indicadores operativos</li><li>Datos de sensores y PLC</li></ul></article>
+      </div>
+    </div></section>
 
-                    <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-3">
-                        <a href="#trabajos" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-center">Mis Trabajos</a>
-                        <a href="/ACPort/assets/CALLATA-ING-CV-2025.pdf" aria-label="Descargar Curriculum" class="w-full sm:w-auto bg-black hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-center" download>Descargar CV</a>
-                        <button aria-label="Muestra mis habilidades de analista" class="w-full sm:w-auto bg-blue-400 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-center" onclick="window.location.href='https://gnr105.github.io/ACPort/'">APU</button>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="/ACPort/assets/perfil.jpg" alt="Foto de perfil" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl border-4">
-                </div>
-            </div>
-        </section>
+    <section class="section shell" id="experiencia">
+      <header class="section-header reveal"><span>03 / EXPERIENCIA</span><h2>Proyectos en campo</h2><p>Instalaciones, mantenimiento y desarrollo aplicado en contextos reales.</p></header>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="carousel" data-carousel><div class="slides"><img src="assets/exar1.jpg" alt="Trabajo en Minera EXAR, imagen 1"><img src="assets/exar2.jpg" alt="Trabajo en Minera EXAR, imagen 2" loading="lazy"><img src="assets/exar3.jpg" alt="Trabajo en Minera EXAR, imagen 3" loading="lazy"></div><button class="prev" type="button" aria-label="Imagen anterior"><i class="fa-solid fa-arrow-left"></i></button><button class="next" type="button" aria-label="Imagen siguiente"><i class="fa-solid fa-arrow-right"></i></button><span class="counter">01 / 03</span></div>
+          <div class="project-copy"><div class="project-heading"><span>JUJUY / ARGENTINA</span><span>SEMRO S.R.L.</span></div><h3>Minera EXAR</h3><p>Relevamiento, armado y planificación de proyectos para instalaciones y mantenimiento de gases industriales, sensores, alarmas y tanques. Implementación de software de gestión para organizar activos y generar informes.</p><div class="project-tags"><span>Planificación</span><span>Mantenimiento</span><span>Activos</span></div></div>
+        </article>
+        <article class="project reverse reveal">
+          <div class="carousel" data-carousel><div class="slides"><img src="assets/litica1.jpg" alt="Laboratorio de Litica Resources, imagen 1"><img src="assets/litica2.jpg" alt="Laboratorio de Litica Resources, imagen 2" loading="lazy"><img src="assets/litica3.jpg" alt="Laboratorio de Litica Resources, imagen 3" loading="lazy"><img src="assets/litica4.jpg" alt="Laboratorio de Litica Resources, imagen 4" loading="lazy"></div><button class="prev" type="button" aria-label="Imagen anterior"><i class="fa-solid fa-arrow-left"></i></button><button class="next" type="button" aria-label="Imagen siguiente"><i class="fa-solid fa-arrow-right"></i></button><span class="counter">01 / 04</span></div>
+          <div class="project-copy"><div class="project-heading"><span>SALTA / ARGENTINA</span><span>SEMRO S.R.L.</span></div><h3>Litica Resources</h3><p>Montaje de laboratorio químico a partir de un relevamiento técnico y selección de activos, respetando criterios de la norma ISO 7396-1. Proyecto concluido exitosamente en dos meses y validado mediante certificaciones técnicas.</p><div class="project-tags"><span>ISO 7396-1</span><span>Montaje</span><span>Calidad</span></div></div>
+        </article>
+        <article class="project reveal">
+          <div class="carousel" data-carousel><div class="slides"><img src="assets/terramaq1.jpg" alt="Área de mantenimiento de Terramaq, imagen 1"><img src="assets/terramaq2.jpg" alt="Área de mantenimiento de Terramaq, imagen 2" loading="lazy"><img src="assets/terramaq3.jpg" alt="Proyecto Terramaq, imagen 3" loading="lazy"><img src="assets/terramaq4.jpg" alt="Proyecto Terramaq, imagen 4" loading="lazy"><img src="assets/terramaq5.jpg" alt="Proyecto Terramaq, imagen 5" loading="lazy"></div><button class="prev" type="button" aria-label="Imagen anterior"><i class="fa-solid fa-arrow-left"></i></button><button class="next" type="button" aria-label="Imagen siguiente"><i class="fa-solid fa-arrow-right"></i></button><span class="counter">01 / 05</span></div>
+          <div class="project-copy"><div class="project-heading"><span>JUJUY / ARGENTINA</span><span>TERRAMAQ S.R.L.</span></div><h3>Mantenimiento e innovación</h3><p>Experiencia aplicada al área de mantenimiento y participación en proyectos con materiales de desempeño técnico, integrando organización operativa, análisis y criterios de durabilidad.</p><div class="project-tags"><span>Operaciones</span><span>Materiales</span><span>Innovación</span></div></div>
+        </article>
+      </div>
+    </section>
 
-        <!-- ========== Sobre Mí ========== -->
-        <section id="sobre-mi" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Sobre Mí</h2>
-                <div class="max-w-3xl mx-auto text-center mb-12">
-                    <p class="text-gray-700 leading-relaxed text-justify">
-                       Analista Programador Universitsrio y estudiante avanzado de Ingenieria Industrial con bases solidas como Programador Junior y desarrollador de proyectos. Cuento con experiencia en logistica, formación de equipos y liderazgo. Manejo de herramientas ERP para producción y distribución, incluyendo SAP, GESCO y Fracctal One. Ademas poseo conocimientos en diferentes lenguajes de programacion. Destaco mi capacidad de organizacion, calidad, compromiso, eficiencia, versatilidad para acomodarme y afrontar cualquier situacion posible que se me presente. 
-                    </p>
-                </div>
-                <div class="max-w-4xl mx-auto">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Mis Habilidades</h3>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <!-- Habilidades como etiquetas pequeñas -->
-                        <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Gestion de Mantenimiento</span>
-                        <span class="bg-indigo-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Planificador de Mantenimiento</span>
-                        <span class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Manejo de metodologias</span>
-                        <span class="bg-sky-500 text-black px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Software de mantenimiento</span>
-                        <span class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Programacion</span>
-                        <span class="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Analista de datos</span>
-                        <span class="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Logistica</span>
-                        <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">ERP</span>
-                        <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">SAP</span>
-                        <span class="bg-indigo-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Calidad</span>
-                        <span class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Ingles</span>
-                        <span class="bg-sky-500 text-black px-4 py-2 rounded-full text-sm font-medium shadow cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-300">Carnet de conducir</span>
-                        <!-- Añade más habilidades aquí -->
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="section dark-panel industrial-demo" id="demostracion"><div class="shell"><header class="section-header reveal"><span>04 / DEMOSTRACIÓN</span><h2>WorkshopOS en funcionamiento</h2><p>Una mirada directa al sistema y su flujo de gestión.</p></header><div class="video-showcase reveal"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/fVxJTOqQl6U" title="Demostración de WorkshopOS, sistema de gestión de mantenimiento" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-copy"><div class="project-tags"><span>Angular</span><span>Node.js</span><span>Mantenimiento</span></div><h3>WorkshopOS</h3><p>Sistema de gestión creado para centralizar la operación de mantenimiento, organizar información y facilitar el seguimiento de las tareas desde una interfaz clara.</p><ul><li><i class="fa-solid fa-plus"></i> Organización operativa</li><li><i class="fa-solid fa-plus"></i> Seguimiento de mantenimiento</li><li><i class="fa-solid fa-plus"></i> Información centralizada</li></ul><a href="https://www.youtube.com/watch?v=fVxJTOqQl6U" target="_blank" rel="noopener noreferrer">Ver en YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div></section>
+    <section class="contact shell reveal" id="contacto"><div><span class="overline">CONTACTO / NUEVOS DESAFÍOS</span><h2>¿Buscás mejorar una operación?</h2><p>Conversemos sobre mantenimiento, procesos, calidad o análisis de datos.</p></div><button class="button light open-contact" type="button">Escribirme <i class="fa-regular fa-paper-plane"></i></button></section>
+  </main>
 
-        <!-- ========== Servicios ========== -->
-        <section id="servicios" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12"> Mis Servicios</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Servicio 1 -->
-                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
-                        <div class="text-blue-600 text-5xl mb-4 text-center"><i class="fa-solid fa-industry"></i></div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Gestion de Calidad</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-center">Garantizo el Uso de normas como ser ISO 9001. Implementando sistemas de gestion de calidad para el analisis con procesos para identificar las mejoras que deben hacerse en la industria.</p>
-                    </div>
-                    <!-- Servicio 2 -->
-                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
-                        <div class="text-blue-600 text-5xl mb-4 text-center"><i class="fas fa-server"></i></div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Gestion de Mantenimiento</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-center">Planificacion mediante herramientas o sistemas de gestion de mantenimiento. Automatizar procesos y tareas. Control de inventario. Generar Informes, ordenes de trabajo, de activos y RRHH. Analizar KPIs.</p>
-                    </div>
-                    <!-- Servicio 3 -->
-                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
-                        <div class="text-blue-600 text-5xl mb-4 text-center"><i class="fa-solid fa-tachograph-digital"></i></div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Analisis de Datos Industrial</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed text-center">Puedo recolectar datos que sean relevantes, hacer limpieza y prepararlos. Uso de PowerBi en sus diferentes tipos de herramientas. Realizo analisis de datos industriales o mineros. Estudios de sensores, PLC, otros controladores. Monitoreando mediante otro software las actividades de las mismas. Realizo un diagnostico.</p>
-                    </div>
-                    <!-- Añade más servicios si los tienes -->
-                </div>
-            </div>
-        </section>
+  <footer class="footer shell"><div><a class="brand" href="#inicio"><span>AC<span>/IND</span></span></a><p>Ingeniería, tecnología y mejora continua.</p></div><div class="socials"><a href="https://www.linkedin.com/in/agust%C3%ADn-callata-267745213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://github.com/gnr105" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://wa.me/543885966923" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div><p>© <span id="year"></span> Agustín Callata</p></footer>
 
-        <!-- ========== Mis Trabajos (Portafolio con Carruseles) ========== -->
-        <section id="trabajos" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Mis Trabajos Destacados</h2>
-
-                <!-- Trabajo/Proyecto 1 -->
-                <div class="mb-16">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center md:text-left">SEMRO S.R.L - JUJUY - ARGENTINA</h3>
-                    <!-- Carrusel para Proyecto 1 -->
-                    <!-- Nota: Este es un carrusel básico con scroll horizontal. Para funcionalidad completa (botones, auto-play), necesitarás JS (ej. SwiperJS) -->
-                    <div class="flex justify-center overflow-x-auto space-x-6 pb-4 custom-scrollbar custom-scrollbar-firefox snap-x snap-mandatory text-center">
-                        <!-- Item 1.1 -->
-                        <div class="flex-shrink-0 w-full sm:w-96 md:w-[30rem] lg:w-[30rem] max-w-sm bg-white rounded-lg shadow-xl overflow-hidden snap-center transform hover:scale-105 transition-transform duration-300 ">
-                            <div class="relative project-item-carousel">
-                                <div class="carousel-images w-full h-56 flex overflow-x-auto snap-x snap-mandatory scroll-smooth custom-scrollbar custom-scrollbar-firefox">
-                                    <img src="/ACPort/assets/exar1.jpg" alt="Imagen A de Minera EXAR" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <img src="/ACPort/assets/exar2.jpg" alt="Imagen B de Minera EXAR" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <img src="/ACPort/assets/exar3.jpg" alt="Imagen C de Minera EXAR" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                </div>
-                                <button aria-label="Imagen anterior" class="carousel-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">‹</button>
-                                <button aria-label="Siguiente imagen" class="carousel-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">›</button>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="font-bold text-lg mb-2 text-gray-800">Minera EXAR - Jujuy</h4>
-                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
-                                    Aqui me toco realizar relevamiento, armado de proyecto, planificar proyecto de instalacion y/o mantenimiento de gases industriales, sensores, alarmas y tanques. Implemente el uso de un software de gestion para organizar activos y realizar informes.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Item 1.2 -->
-                        <div class="flex-shrink-0 w-full sm:w-96 md:w-[30rem] lg:w-[30rem] max-w-sm bg-white rounded-lg shadow-xl overflow-hidden snap-center transform hover:scale-105 transition-transform duration-300 ">
-                            <div class="relative project-item-carousel">
-                                <div class="carousel-images w-full h-56 flex overflow-x-auto snap-x snap-mandatory scroll-smooth custom-scrollbar custom-scrollbar-firefox">
-                                    <!-- Reemplaza con tus imágenes -->
-                                    <img src="/ACPort/assets/litica1.jpg" alt="Imagen A de Litica Resources" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <img src="/ACPort/assets/litica2.jpg" alt="Imagen B de Litica Resources" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <img src="/ACPort/assets/litica3.jpg" alt="Imagen C de Litica Resources" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <!-- Añade más imágenes aquí -->
-                                </div>
-                                <button aria-label="Imagen anterior" class="carousel-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">‹</button>
-                                <button aria-label="Siguiente imagen" class="carousel-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">›</button>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="font-bold text-lg mb-2 text-gray-800">Litica Resources - Salta</h4>
-                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
-                                    En Litica me toco el montaje de un laboratorio quimico. Hicimos un estudio de relevamiento, respetando norma ISO 7396-1:2007 para la Instalacion de Gases Medicinales e Industriales. Seleccion de activo. El proyecto se realizo con mucho exito en el plazo de 2 meses. Se comprobo la calidad de la instalacion mediante certificaciones a cargos de Ingenieros especialistas en el area.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Añade más items para el carrusel del Proyecto 1 -->
-                    </div>
-                </div>
-
-                <!-- Trabajo/Proyecto 2 -->
-                <div class="mb-16">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center md:text-left">TERRAMAQ S.R.L - JUJUY - ARGENTINA</h3>
-                    <!-- Carrusel para Proyecto 2 -->
-                    <div class="flex justify-center overflow-x-auto space-x-6 pb-4 custom-scrollbar custom-scrollbar-firefox snap-x snap-mandatory">
-                        <!-- Item 2.1 -->
-                         <div class="flex-shrink-0 w-full sm:w-96 md:w-[30rem] lg:w-[30rem] max-w-sm bg-white rounded-lg shadow-xl overflow-hidden snap-center transform hover:scale-105 transition-transform duration-300 ">
-                            <div class="relative project-item-carousel">
-                                <div class="carousel-images w-full h-56 flex overflow-x-auto snap-x snap-mandatory scroll-smooth custom-scrollbar custom-scrollbar-firefox">
-                                    <!-- Reemplaza con tus imágenes -->
-                                    <img src="/ACPort/assets/terramaq1.jpg" alt="Imagen A del Area de Mantenimiento" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <img src="/ACPort/assets/terramaq2.jpg" alt="Imagen B del Area de Mantenimiento" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <!-- Añade más imágenes aquí -->
-                                </div>
-                                <button aria-label="Imagen anterior" class="carousel-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">‹</button>
-                                <button aria-label="Siguiente imagen" class="carousel-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">›</button>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="font-bold text-lg mb-2 text-gray-800">Area de Mantenimiento</h4>
-                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
-                                    En este ambito pude afianzar herramientas como ser la de una correcta linea de mantenimiento. Implemente un software, Fracctal One, herramienta que me permitio confeccionar estrategias
-                                    para una produccion continua. Junto con el area de compra, almacen y encargados de produccion, coordinamos los activos, estados de las mismas. Del estado de las maquinas y el analisis de Calidad de los productos.
-                                    Como tambien implementar un plan para aquellas fallas como ser preventivas, predictivas y de urgencias.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Item 2.2 -->
-                         <div class="flex-shrink-0 w-full sm:w-96 md:w-[30rem] lg:w-[30rem] max-w-sm bg-white rounded-lg shadow-xl overflow-hidden snap-center transform hover:scale-105 transition-transform duration-300 ">
-                            <div class="relative project-item-carousel">
-                                <div class="carousel-images w-full h-56 flex overflow-x-auto snap-x snap-mandatory scroll-smooth custom-scrollbar custom-scrollbar-firefox">
-                                    <!-- Reemplaza con tus imágenes -->
-                                    <img src="https://media.todojujuy.com/p/68a06c476b3fd39c00d4e06d20aac7bf/adjuntos/227/imagenes/003/351/0003351853/770x0/smart/en-perico-inauguraron-la-primera-calle-pavimento-sustentable.jpg" alt="Imagen A de Funcionalidad Específica" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <img src="https://media.todojujuy.com/p/64adf3bc79ada5680fc6be378156aef3/adjuntos/227/imagenes/003/351/0003351855/770x0/smart/en-perico-inauguraron-la-primera-calle-pavimento-sustentable.jpg" alt="Imagen B de Funcionalidad Específica" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                     <img src="/assets/terramaq5.jpg" alt="Imagen B de Funcionalidad Específica" class="w-full h-full object-cover flex-shrink-0 snap-center">
-                                    <!-- Añade más imágenes aquí -->
-                                </div>
-                                <button aria-label="Imagen anterior" class="carousel-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">‹</button>
-                                <button aria-label="Siguiente imagen" class="carousel-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 z-10">›</button>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="font-bold text-lg mb-2 text-gray-800">Funcionalidad Específica</h4>
-                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
-                                    Contribui al desarrollo de material especial para el proyecto de "PAVIMENTO SUSTENTABLE" junto con la ECOIM y Productora Quimica S.R.L 
-                                    de Santa Fe. Esta contrubución fortalecio las relaciones para consolidar un plan productivo y sustentable. Otra opcion mas segura a la 
-                                    reutilizacion de material plastico. Se establecio la duración minima de 10 años a traves de estudios de resistencia de material como TGA, 
-                                    DSC, TGA, aqui vemos la resistencia a la tracción y flexión, como al impacto. Se certifico con apreciacion tecnica, con firma de profesionales.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Añade más items para el carrusel del Proyecto 2 -->
-                    </div>
-                </div>
-
-                <!-- Puedes añadir más bloques de Trabajo/Proyecto aquí -->
-
-            </div>
-        </section>
-
-        <!-- ========== Footer ========== -->
-     <footer id="contact" class="bg-black text-white w-full py-12 lg:text-center">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-10">
-
-                    <!-- Columna 1: Redes Sociales -->
-                    <div class="text-center md:text-left">
-                        <h3 class="text-xl font-semibold mb-4 text-center">Redes sociales</h3>
-                        <p class="text-sm mb-2">Auténtico e innovador</p>
-                        <p class="text-sm mb-4">Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
-                        <div class="mt-5 flex justify-center md:justify-start lg:justify-center gap-4">
-                            <a href="https://www.facebook.com/agustin.callata/" target="_blank" aria-label="Ir a facebook" class="text-gray-500 hover:text-blue-700 transition-colors duration-300">
-                                <i class="fab fa-facebook fa-lg"></i>
-                            </a>
-                            <a href="https://www.instagram.com/agusc.nort/" target="_blank" aria-label="Ir a instagram" class="text-gray-500 hover:text-pink-500 transition-colors duration-300">
-                                <i class="fab fa-instagram fa-lg"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/agust%C3%ADn-callata-267745213/" target="_blank" aria-label="Ir a linkedin" class="text-gray-500 hover:text-blue-500 transition-colors duration-300">
-                                <i class="fab fa-linkedin fa-lg"></i>
-                            </a>
-                            <a href="https://github.com/gnr105" target="_blank" aria-label="Ir a Git" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">
-                                <i class="fab fa-github fa-lg"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Columna 2: Contacto -->
-                    <div class="text-center"> <!-- Contenido centrado en móvil, y por lg:text-center en el footer -->
-                        <h3 class="text-xl font-semibold mb-4">Contacto</h3>
-                        <div class="flex items-center justify-center gap-2 mb-2">
-                            <a href="https://wa.me/543885966923" target="_blank" aria-label="Ir a Whatsapp" class="text-green-500 hover:text-green-600 transition-colors duration-300">
-                                <i class="fab fa-whatsapp fa-lg"></i>
-                            </a>
-                            <p class="text-sm">+54 388 596 6923</p>
-                        </div>
-                        <div class="flex items-center justify-center gap-2 mb-4">
-                            <i class="fas fa-envelope fa-lg text-gray-500"></i>
-                            <p class="text-sm">agus.acallata@gmail.com</p>
-                        </div>
-                        <button id="openContactModalButton"
-                           class="inline-block bg-blue-600 text-white text-sm font-medium py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
-                            <i class="fas fa-paper-plane mr-1"></i>Escríbeme
-                        </button>
-                    </div>
-
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold mb-4">Mis Servicios</h3>
-                        <p class="text-sm mb-1">Gestión de calidad</p>
-                        <p class="text-sm mb-1">Gestión de mantenimiento</p>
-                        <p class="text-sm mb-1">Analista de Datos Industrial</p>
-                    </div>
-                </div>
-                <div class="mt-12 border-t border-gray-300 pt-8 text-center">
-                    <p class="text-sm text-gray-500">&copy; <span id="currentYearFooter"></span> Agustin Callata. Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Contact Modal -->
-        <div id="contactModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center hidden z-[100]">
-            <div class="relative mx-auto p-5 sm:p-6 border w-11/12 md:w-1/2 lg:w-1/3 shadow-lg rounded-md bg-white">
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="text-xl font-semibold text-gray-900">Contactarme</h3>
-                    <button id="closeModalButton" aria-label="Cerrar modal" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                </div>
-                <form id="contactForm">
-                    <div class="mb-4">
-                        <label for="emailRemitente" class="block mb-2 text-sm font-medium text-gray-700">Tu Email</label>
-                        <input type="email" id="emailRemitente" name="emailRemitente" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="tuemail@ejemplo.com" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="asunto" class="block mb-2 text-sm font-medium text-gray-700">Asunto</label>
-                        <input type="text" id="asunto" name="asunto" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Asunto del mensaje" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-700">Nombre</label>
-                        <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Indique su nombre" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="mensaje" class="block mb-2 text-sm font-medium text-gray-700">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                    </div>
-                    <div id="formErrorMessage" class="text-red-600 text-sm mb-3 text-center hidden"></div>
-                    <button type="submit" id="submitContactFormButton" class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Enviar Mensaje</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Success Toast -->
-        <div id="successToast" class="fixed bottom-5 right-5 bg-green-600 text-white py-3 px-5 rounded-lg shadow-lg hidden z-[101]">
-            Mensaje enviado con éxito!
-        </div>
-
-        <script src="industrial.js" defer></script>
-    </div>   
-    </body>
+  <dialog class="contact-modal" id="contact-modal" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button><div class="modal-title"><span><i class="fa-regular fa-envelope"></i></span><div><small>CONTACTO</small><h2 id="modal-title">Hablemos de tu proyecto</h2><p>Completá los datos y se abrirá tu aplicación de correo con el mensaje preparado.</p></div></div><form id="contact-form"><div class="form-row"><label>Nombre<input name="name" type="text" autocomplete="name" placeholder="Tu nombre" maxlength="80" required></label><label>Email<input name="email" type="email" autocomplete="email" placeholder="tu@email.com" maxlength="120" required></label></div><label>Asunto<input name="subject" type="text" placeholder="Motivo del contacto" maxlength="120" required></label><label>Mensaje<textarea name="message" rows="5" placeholder="Contame sobre el desafío..." maxlength="1500" required></textarea></label><div class="form-actions"><p><i class="fa-solid fa-shield-halved"></i> Tus datos no se almacenan.</p><button class="button" type="submit">Preparar correo <i class="fa-regular fa-paper-plane"></i></button></div></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="industrial.js"></script>
+</body>
 </html>
-
