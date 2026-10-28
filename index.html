@@ -14,8 +14,9 @@
   <link rel="stylesheet" href="videos.css">
   <link rel="stylesheet" href="videos-layout.css">
   <link rel="stylesheet" href="contact-email.css">
-</head>
-<body>
+<link rel="stylesheet" href="editorial.css">
+<link rel="stylesheet" href="development.css"><link rel="stylesheet" href="scroll-scenes.css"></head>
+<body class="tech-theme">
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
 
@@ -23,7 +24,7 @@
     <nav class="navbar container" aria-label="Navegación principal">
       <a class="brand" href="#home" aria-label="Ir al inicio">
         <img src="assets/lgaca.png" alt="" width="54" height="54">
-        <span>Agustín<span class="accent">.</span></span>
+        <span>AC<span class="accent">/DEV</span></span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -38,11 +39,11 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero container" id="home">
-      <div class="hero-copy reveal-on-scroll">
+  <a class="skip-link" href="#about">Saltar al contenido</a><main>
+    <div class="hero-track"><section class="hero container" id="home"><div class="aurora-scene" aria-hidden="true"><div class="aurora a1"></div><div class="aurora a2"></div><div class="aurora a3"></div><div class="horizon"></div><div class="starfield"></div><div class="flight-line"></div></div>
+      <div class="hero-copy reveal-on-scroll"><div class="profile-switch" aria-label="Elegir perfil"><a href="index.html" aria-current="page">Desarrollo</a><a href="industrial.html" >Industria</a></div>
         <span class="eyebrow"><i class="fa-solid fa-circle"></i> Disponible para nuevos proyectos</span>
-        <h1>Creo productos digitales que <span class="gradient-text">funcionan y destacan.</span></h1>
+        <h1><span class="hero-line">De una idea.</span><span class="hero-line">A algo</span><span class="hero-line gradient-text">extraordinario.</span></h1>
         <p class="hero-lead">Soy Agustín Callata, Analista Programador Universitario y estudiante avanzado de Ingeniería Industrial. Diseño y desarrollo experiencias web rápidas, claras y escalables.</p>
         <div class="hero-actions">
           <button class="button open-contact" type="button"><i class="fa-regular fa-paper-plane"></i> Hablemos</button>
@@ -54,14 +55,15 @@
           <a href="industrial.html"><i class="fa-solid fa-industry"></i> Perfil industrial</a>
         </div>
       </div>
-      <div class="hero-visual reveal-on-scroll">
+      <div class="hero-visual reveal-on-scroll"><div class="orbit" aria-hidden="true"><span>✦</span></div><div class="pass-label">CREATIVE DEVELOPER <span>↗</span></div>
         <div class="portrait-frame"><img src="assets/perfil.jpg" alt="Retrato de Agustín Callata" width="620" height="620"></div>
         <div class="floating-card card-code"><span>&lt;/&gt;</span><div><strong>Full Stack</strong><small>Frontend + Backend</small></div></div>
         <div class="floating-card card-location"><i class="fa-solid fa-location-dot"></i><div><strong>Argentina</strong><small>Trabajo remoto</small></div></div>
       </div>
     </section>
 
-    <section class="section container" id="about">
+    </div><div class="tech-ribbon" aria-label="Tecnologías principales"><div><span>ANGULAR</span><b>✦</b><span>NODE.JS</span><b>✦</b><span>TYPESCRIPT</span><b>✦</b><span>POSTGRESQL</span><b>✦</b><span aria-hidden="true">ANGULAR</span><b aria-hidden="true">✦</b><span aria-hidden="true">NODE.JS</span><b aria-hidden="true">✦</b><span aria-hidden="true">TYPESCRIPT</span><b aria-hidden="true">✦</b><span aria-hidden="true">POSTGRESQL</span><b aria-hidden="true">✦</b></div></div>
+<section class="section container" id="about">
       <div class="section-heading reveal-on-scroll"><span class="section-number">01</span><div><p class="kicker">Sobre mí</p><h2>Una mirada técnica y estratégica</h2></div></div>
       <div class="about-grid">
         <div class="about-copy reveal-on-scroll">
@@ -78,26 +80,38 @@
       </div>
     </section>
 
-    <section class="section section-tinted" id="skills">
-      <div class="container">
-        <div class="section-heading reveal-on-scroll"><span class="section-number">02</span><div><p class="kicker">Stack tecnológico</p><h2>Herramientas para construir en serio</h2></div></div>
-        <div class="skill-groups">
-          <article class="skill-group reveal-on-scroll"><i class="fa-solid fa-display"></i><h3>Frontend</h3><div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Angular</span></div></article>
-          <article class="skill-group reveal-on-scroll"><i class="fa-solid fa-server"></i><h3>Backend & APIs</h3><div class="chips"><span>Node.js</span><span>Express</span><span>Laravel</span><span>.NET</span><span>REST APIs</span><span>JWT</span><span>CORS</span></div></article>
-          <article class="skill-group reveal-on-scroll"><i class="fa-solid fa-database"></i><h3>Datos & Cloud</h3><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>Neon</span><span>Power BI</span><span>Git</span><span>GitHub</span></div></article>
-        </div>
-      </div>
-    </section>
-
+<section class="section container capabilities-section" id="skills"><div class="section-heading"><span class="section-number">02</span><div><p class="kicker">De punta a punta</p><h2>El código detrás<br>de la experiencia.</h2></div></div><div class="capability-list">
+<details open><summary><span class="row-index">01</span><span data-decode>FRONTEND</span><span class="row-arrow">↗</span></summary><div class="capability-body"><p>Interfaces claras, rápidas y adaptables. El punto donde una idea se encuentra con las personas.</p><div class="chips"><span>Angular</span><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></div></details>
+<details><summary><span class="row-index">02</span><span data-decode>BACKEND & APIs</span><span class="row-arrow">↗</span></summary><div class="capability-body"><p>La lógica que conecta todo: autenticación, servicios y datos para aplicaciones completas.</p><div class="chips"><span>Node.js</span><span>Express</span><span>Laravel</span><span>.NET</span><span>REST APIs</span><span>JWT</span><span>CORS</span></div></div></details>
+<details><summary><span class="row-index">03</span><span data-decode>DATOS & CLOUD</span><span class="row-arrow">↗</span></summary><div class="capability-body"><p>Información organizada para respaldar decisiones y acompañar la evolución de cada proyecto.</p><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>Neon</span><span>Power BI</span><span>Git</span><span>GitHub</span></div></div></details></div></section>
+<section class="journey" aria-label="Cómo conecto interfaz, lógica y datos">
+ <div class="journey-sticky">
+  <div class="scene-heading"><span class="kicker">UNA IDEA / TRES CAPAS</span><span class="scene-count" aria-hidden="true">01 — 03</span></div>
+  <div class="scene-narrative">
+   <article class="scene-panel"><p class="kicker">01 / LO QUE VES</p><h2>Todo empieza<br>con una <em>experiencia.</em></h2><p>Interfaces claras, adaptables y pensadas para que cada interacción tenga sentido.</p><span class="scene-tools">ANGULAR · TYPESCRIPT · CSS</span></article>
+   <article class="scene-panel"><p class="kicker">02 / LO QUE LO HACE POSIBLE</p><h2>Detrás de cada clic,<br>una <em>conexión.</em></h2><p>Servicios, reglas de negocio y autenticación. Las piezas que convierten una interfaz en una aplicación.</p><span class="scene-tools">NODE.JS · EXPRESS · REST APIs</span></article>
+   <article class="scene-panel"><p class="kicker">03 / LO QUE LE DA VALOR</p><h2>Datos que se vuelven<br><em>decisiones.</em></h2><p>Información organizada y conectada con la operación. Del primer registro a una visión más clara del negocio.</p><span class="scene-tools">POSTGRESQL · SQL · POWER BI</span></article>
+  </div>
+  <div class="scene-art" aria-hidden="true">
+   <div class="scene-glow"></div><div class="scene-ring ring-one"></div><div class="scene-ring ring-two"></div>
+   <div class="scene-device">
+    <div class="device-bar"><span>● ● ●</span><span>AC / DIGITAL SYSTEMS</span><span>↗</span></div>
+    <div class="device-view interface-view"><div class="mini-nav">AC<span>PROYECTOS / CONTACTO</span></div><p>De una idea.</p><strong>A una<br><em>experiencia.</em></strong><div class="mini-button">EXPLORAR ↗</div><div class="mini-panels"><i></i><i></i><i></i></div></div>
+    <div class="device-view logic-view"><span class="code-label">API / SOLICITUD → RESPUESTA</span><pre><span>router</span>.get('/proyectos',<br>  <span>async</span> (req, res) =&gt; {<br><br>    <span>const</span> proyectos =<br>      <span>await</span> Proyecto.findAll();<br><br>    res.json(proyectos);<br>  });</pre><div class="code-status">● 200 OK <span>CONEXIÓN ESTABLECIDA</span></div></div>
+    <div class="device-view data-view"><span class="code-label">DATOS / UNA VISIÓN MÁS CLARA</span><h3>Información<br>en movimiento.</h3><div class="data-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="data-legend"><span>REGISTROS</span><span>ANÁLISIS</span><span>DECISIONES</span></div><p>Visualización conceptual</p></div>
+   </div><div class="device-foot"></div>
+  </div>
+  <div class="scene-progress" aria-hidden="true"><span>DESPLAZATE PARA EXPLORAR</span><div><i></i></div><span class="scene-progress-label">INTERFAZ</span></div>
+ </div></section>
     <section class="section container" id="portfolio">
       <div class="section-heading reveal-on-scroll"><span class="section-number">03</span><div><p class="kicker">Trabajo seleccionado</p><h2>Proyectos recientes</h2></div></div>
       <div class="project-filters reveal-on-scroll" role="group" aria-label="Filtrar proyectos">
         <button class="active" data-filter="all" type="button">Todos</button><button data-filter="web" type="button">Web</button><button data-filter="commerce" type="button">E-commerce</button><button data-filter="data" type="button">Datos</button>
       </div>
       <div class="projects-grid">
-        <article class="project-card reveal-on-scroll" data-category="commerce"><img src="assets/dibutick.png" alt="Vista de proyecto e-commerce" loading="lazy"><div class="project-body"><div class="project-meta"><span>E-commerce</span><span>UI/UX</span></div><h3>Tienda digital de Eventos Deportivos</h3><p>Catálogo comercial con una interfaz visual, clara y adaptable. Cuenta con Apis de Mercado Pago, Google Maps, Google Auth, Dashboard</p><a href="https://proyfrontendgrupog17.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Ver Dibutick">Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+        <article class="project-card reveal-on-scroll" data-category="commerce"><img src="assets/dibutick.png" alt="Vista de proyecto e-commerce" loading="lazy"><div class="project-body"><div class="project-meta"><span>E-commerce</span><span>UI/UX</span></div><h3>Dibutick</h3><p>Catálogo comercial con una interfaz visual, clara y adaptable. Cuenta con Apis de Mercado Pago, Google Maps, Google Auth, Dashboard</p><a href="https://proyfrontendgrupog17.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Ver Dibutick">Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
         <article class="project-card reveal-on-scroll" data-category="web"><img src="assets/workshopOs.png" alt="Vista plataforma de mantenimiento" loading="lazy"><div class="project-body"><div class="project-meta"><span>Web</span><span>Angular</span><span>Express</span><span>Node</span><span>Mantenimiento</span></div><h3>WorkshopOs</h3><p>Sistema de gestión de Mantenimiento destinado a optimizar procesos y mejorar la eficiencia operativa.</p><a href="https://workshop-os-web-30z6.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Ver Sistema de Gestion">Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
-        <article class="project-card reveal-on-scroll" data-category="data"><img src="assets/inicio.png" alt="Vista de gestion de turnos" loading="lazy"><div class="project-body"><div class="project-meta"><span>Datos</span><span>Gestion</span><span>Frontend</span><span>Backend</span><span>Node.js</span><span>JWT</span><span>Posgrest</span></div><h3>Mi Turnero</h3><p>Turnero administrativo para la gestión de turnos y consultas.</p><a href="https://mi-turnero.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Ver Portal de noticias">Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+        <article class="project-card reveal-on-scroll" data-category="data"><img src="assets/inicio.png" alt="Vista de gestion de turnos" loading="lazy"><div class="project-body"><div class="project-meta"><span>Datos</span><span>Gestion</span><span>Frontend</span><span>Backend</span><span>Node.js</span><span>JWT</span><span>PostgreSQL</span></div><h3>Mi Turnero</h3><p>Turnero administrativo para la gestión de turnos y consultas.</p><a href="https://mi-turnero.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Ver Portal de noticias">Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
         <article class="project-card reveal-on-scroll" data-category="web"><img src="assets/pagcal.png" alt="Vista del proyecto de noticias" loading="lazy"><div class="project-body"><div class="project-meta"><span>Web</span><span>Frontend</span></div><h3>Varios</h3><p>Experiencia editorial responsive enfocada en legibilidad y navegación.</p><a href="https://gnr105.github.io/Ramdon/home" target="_blank" rel="noopener noreferrer" aria-label="Ver Portal de noticias">Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
       </div>
     </section>
@@ -113,23 +127,23 @@
   </main>
 
   <footer class="footer container">
-    <div><a class="brand" href="#top"><span>Agustín<span class="accent">.</span></span></a><p>Desarrollo web, datos y soluciones digitales.</p></div>
+    <div><a class="brand" href="#top"><span>AC<span class="accent">/DEV</span></span></a><p>Desarrollo web, datos y soluciones digitales.</p></div>
     <div class="footer-socials"><a href="https://github.com/gnr105" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/agust%C3%ADn-callata-267745213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a><a href="https://wa.me/543885966923" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
     <p>© <span id="year"></span> Agustín Callata</p>
   </footer>
 
   <dialog class="contact-modal" id="contact-modal" aria-labelledby="modal-title">
     <button class="modal-close" type="button" aria-label="Cerrar formulario"><i class="fa-solid fa-xmark"></i></button>
-    <div class="modal-heading"><span class="modal-icon"><i class="fa-regular fa-envelope"></i></span><div><p class="kicker">Contacto</p><h2 id="modal-title">Hablemos de tu proyecto</h2><p>Completá los datos y se abrirá tu aplicación de correo con el mensaje listo.</p></div></div>
+    <div class="modal-heading"><span class="modal-icon"><i class="fa-regular fa-envelope"></i></span><div><p class="kicker">Contacto</p><h2 id="modal-title">Hablemos de tu proyecto</h2><p>Completá los datos para enviar tu consulta.</p></div></div>
     <form id="contact-form">
       <div class="form-row"><label>Nombre<input name="name" type="text" autocomplete="name" placeholder="Tu nombre" required maxlength="80"></label><label>Email<input name="email" type="email" autocomplete="email" placeholder="tu@email.com" required maxlength="120"></label></div>
       <label>Asunto<input name="subject" type="text" placeholder="¿En qué puedo ayudarte?" required maxlength="120"></label>
       <label>Mensaje<textarea name="message" rows="5" placeholder="Contame brevemente sobre tu proyecto..." required maxlength="1500"></textarea></label>
-      <div class="form-actions"><p><i class="fa-solid fa-shield-halved"></i> Tus datos no se almacenan.</p><button class="button" type="submit">Preparar correo <i class="fa-regular fa-paper-plane"></i></button></div>
+      <div class="form-actions"><p><i class="fa-solid fa-shield-halved"></i> El mensaje se procesa mediante EmailJS.</p><button class="button" type="submit">Enviar mensaje <i class="fa-regular fa-paper-plane"></i></button></div>
     </form>
   </dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="index.js"></script>
-</body>
+<script src="motion.js"></script><script src="development.js"></script></body>
 </html>
